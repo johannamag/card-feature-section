@@ -118,3 +118,41 @@ section {
 .blau {
   border-top: 4px solid var(--blau);
 }
+
+@media screen and (max-width: 790px) {
+  .card > p {
+    margin-bottom: 15px;
+  }
+  .card > img {
+    position: initial;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    margin: 0 auto;
+  }
+  .rot,
+  .turkis,
+  .orange {
+    margin-bottom: 40px;
+  }
+  .left {
+    margin-right: 0;
+  }
+  .center {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .right {
+    margin-left: 0;
+  }
+  .card > img {
+    margin-right: 0;
+  }
+}
